@@ -3,4 +3,12 @@ project(PontInPlain C)
 
 set(CMAKE_C_STANDARD 23)
 
-add_executable(PontInPlain main.c)
+include_directories(
+        Inc
+)
+
+add_executable(PontInPlain
+        Src/main.c
+        Src/sqare_find.c
+)
+
